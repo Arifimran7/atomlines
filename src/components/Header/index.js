@@ -3,7 +3,7 @@ import MenuList from "./MenuList";
 import CompanyLogo from "./CompanyLogo";
 import MenubarIcon from "./MenubarIcon";
 
-const Header = () => {
+const Header = ({ handleMenuClick }) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -11,8 +11,8 @@ const Header = () => {
   };
 
   return (
-    <div className="navBar-Header lg:px-20">
-      <nav className="bg-white border-gray-200 bg-slate-100	">
+    <div className="navBar-Header lg:px-20 bg-white  ">
+      <nav className="bg-white border-gray-200 bg-slate-100 ">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
           <CompanyLogo />
 
@@ -36,7 +36,7 @@ const Header = () => {
               isMobileMenuOpen ? "block" : "hidden"
             } w-full md:block md:w-auto`}
           >
-            <MenuList />
+            <MenuList handleMenuClick={handleMenuClick} />
           </div>
         </div>
       </nav>

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -34,7 +35,7 @@ module.exports = {
       black: "900",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
   variants: {
     extend: {
       backgroundColor: ["hover"],
