@@ -4,7 +4,7 @@ import storageImage from "../../assets/images/storageImage.png";
 
 const Components4 = () => {
   return (
-    <div className="cloud-honsting-server bg-gray-100	 ">
+    <div className="cloud-honsting-server bg-white">
       <div className="container mx-auto max-w-screen-2xl flex flex-wrap items-center py-10 xl:py-20  ">
         <div className="md:text-left lg:text-left">
           <div className="grid lg:grid-cols-2 mb-12 lg:mb-16  gap-6 items-center px-7">
